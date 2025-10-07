@@ -1,6 +1,7 @@
 import './App.css'
 import styled from "styled-components";
 import imgDesert from "./assets/desert.png";
+import {StyBtn} from "./components/Button.styled.tsx";
 
 function App() {
 
@@ -8,17 +9,34 @@ function App() {
         <>
             <Box>
                 <Card>
-                    <img src={imgDesert} alt="пустыня"/>
-                    <h2>Headline</h2>
-                    <p>Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie ornare in venen.</p>
-                    <StyBtn>See more</StyBtn>
-                    <StyBtn>Save</StyBtn>
+                    <ImgCard src={imgDesert}></ImgCard>
+                    <Title>Headline</Title>
+                    <Description>Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie ornare in  venen.</Description>
+                    <StyBtn btnType={"primary"}>See more</StyBtn>
+                    <StyBtn btnType={"outlined"}>Save</StyBtn>
                 </Card>
             </Box>
         </>
     )
 }
-
+const Title = styled.h2`
+    font-size: 16px;
+    margin: 0px 20px ;
+`
+const Description = styled.p`
+    font-size: 12px;
+    color: #ABB3BA;
+    line-height: 1.66667;
+    margin: 20px 20px 0px 20px;
+    text-align: start;
+`
+const ImgCard = styled.img`
+    display: block;
+    width: 280px;   
+    height: 170px;  
+    object-fit: cover;
+    margin: 10px 10px 20px 10px;
+`
 const Box = styled.div`// пока временно
     height: 100vh;
     display: flex;
@@ -26,26 +44,13 @@ const Box = styled.div`// пока временно
     align-items: center;
 `
 const Card = styled.div`
-    box-shadow: 5px 5px 20px
+    box-shadow: 20px 20px 40px 0 rgba(81, 91, 117, 0.25);
+    border-radius: 10px;
+    max-width: 300px; //хард коде
+    max-height: 350px;
     
 `
-const StyBtn = styled.button`
-    margin: 12px;
-    color: #FFFFFF;
-    background-color: #4E71FE;
-    font-size: 10px;
-    text-align: center;
-    border-radius: 5px;
-    border: 2px solid #4E71FE;
-    width: 86px; //хард код исправь
-    height: 30px;
 
-    &:hover {
-        color: #1e293b;
-        background-color: #f8fafc;
-        border: 2px solid #1e293b;
-        cursor: pointer;
-`
 
 
 export default App
