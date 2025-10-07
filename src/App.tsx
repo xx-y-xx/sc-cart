@@ -21,13 +21,13 @@ function App() {
 }
 const Title = styled.h2`
     font-size: 16px;
-    margin: 0px 20px ;
+    margin: auto 20px ;
 `
 const Description = styled.p`
     font-size: 12px;
     color: #ABB3BA;
     line-height: 1.66667;
-    margin: 20px 20px 0px 20px;
+    margin: 20px 20px auto 20px;
     text-align: start;
 `
 const ImgCard = styled.img`
@@ -47,8 +47,7 @@ const Card = styled.div`
     box-shadow: 20px 20px 40px 0 rgba(81, 91, 117, 0.25);
     border-radius: 10px;
     max-width: 300px; //хард коде
-    max-height: 350px;
-    
+    max-height: 350px;    
 `
 
 

@@ -28,9 +28,5 @@ export const StyBtn = styled.button<StyleBtnPropsType>`
         border: 2px solid #1e293b;
         cursor: pointer;
         transition: all 2s;
-        transform: scale(1.1);}
-        
-        
-        
-        
+        transform: scale(1.1);}        
 `
