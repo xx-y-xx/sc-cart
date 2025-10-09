@@ -1,1 +1,1 @@
-React-проект на TypeScript с испльзованием  Styled components 
+React-проект на TypeScript с испльзованием  Styled components сборщик pnpm Vite Bable
