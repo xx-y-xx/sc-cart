@@ -1,5 +1,12 @@
 import styled, {css} from "styled-components";
 
+export const SectionBtn = styled.section`
+    gap: 13px;
+    display: flex;
+    margin: auto 20px;
+`
+
+
 type StyleBtnPropsType = {
     btnType: "outlined"|"primary"
 }
@@ -12,6 +19,7 @@ export const StyBtn = styled.button<StyleBtnPropsType>`
     border: 2px solid #4E71FE;
     width: 86px; //хард код исправь
     height: 30px;
+    
     
     ${props => props.btnType === "outlined" && css<StyleBtnPropsType>`          
         color: #4E71FE;  
