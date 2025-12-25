@@ -12,21 +12,6 @@ const dataCard = [
         alt: 'пустыня',
         title: 'Headline',
         description: 'Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie ornare inn venen',
-    },    {
-        imgCard: imgDesert,
-        alt: 'пустыня',
-        title: 'Headline',
-        description: 'Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie ornare inn venen',
-    },    {
-        imgCard: imgDesert,
-        alt: 'пустыня',
-        title: 'Headline',
-        description: 'Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie ornare inn venen',
-    },    {
-        imgCard: imgDesert,
-        alt: 'пустыня',
-        title: 'Headline',
-        description: 'Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie ornare inn venen',
     },
 ]
 
