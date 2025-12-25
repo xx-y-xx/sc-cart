@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const ImgCard = styled.img`
     display: block; // он зедсь правла НУЖЕН ?
-    width: 280px;
+    width: 100%;
     height: 170px;
-    object-fit: contain;
-    margin: 10px 10px 20px 10px;
+    object-fit: cover;
+    border-radius: 8px;
 `

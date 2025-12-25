@@ -1,9 +1,16 @@
 import styled, {css} from "styled-components";
 
-export const SectionBtn = styled.section`
-    gap: 13px;
-    display: flex;
-    margin: auto 20px;
+export const SectionBtn = styled.div`
+    gap: 14px;
+    display: flex;    
+    margin: auto 10px;
+    
+    @media screen and (max-width: 230px) {
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 4px;     
+        align-items: center;
+    }
 `
 
 
@@ -17,7 +24,7 @@ export const StyBtn = styled.button<StyleBtnPropsType>`
     text-align: center;
     border-radius: 5px;
     border: 2px solid #4E71FE;
-    width: 86px; //хард код исправь
+    width: 86px;
     height: 30px;
     
     
@@ -36,5 +43,9 @@ export const StyBtn = styled.button<StyleBtnPropsType>`
         border: 2px solid #1e293b;
         cursor: pointer;
         transition: all 2s;
-        transform: scale(1.1);}        
+        transform: scale(1.1);}
+
+    @media screen and (max-width: 230px){
+        margin-top: 6px;
+    }
 `
